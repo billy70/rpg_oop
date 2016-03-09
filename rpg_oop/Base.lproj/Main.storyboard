@@ -90,6 +90,17 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rx4-bc-pPy">
+                                <rect key="frame" x="251" y="482" width="99" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="99" id="70h-or-84E"/>
+                                    <constraint firstAttribute="height" constant="110" id="OPS-8K-npo"/>
+                                </constraints>
+                                <state key="normal" image="attack"/>
+                                <connections>
+                                    <action selector="attackTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7dc-vz-U9r"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -108,7 +119,9 @@
                             <constraint firstItem="qna-OM-h4a" firstAttribute="centerY" secondItem="nBh-OZ-3ZO" secondAttribute="centerY" id="YBu-L0-17n"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sxh-30-ceJ" secondAttribute="bottom" id="ZaD-Mg-WDm"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Qdr-Og-14L" secondAttribute="bottom" id="fcX-XR-Ngu"/>
+                            <constraint firstItem="Rx4-bc-pPy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hxV-m4-ZfO"/>
                             <constraint firstItem="uIW-Z3-XWB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="14" id="rv1-N8-r2h"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Rx4-bc-pPy" secondAttribute="bottom" constant="8" id="sTR-Cz-oSE"/>
                             <constraint firstItem="nBh-OZ-3ZO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xoV-MF-J4r"/>
                             <constraint firstItem="nBh-OZ-3ZO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="10" id="xxC-aE-OjM"/>
                             <constraint firstAttribute="trailing" secondItem="sxh-30-ceJ" secondAttribute="trailing" id="ySy-Gb-Hsr"/>
@@ -135,6 +148,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="attack" width="198" height="223"/>
         <image name="bg" width="768" height="1024"/>
         <image name="chest" width="393" height="440"/>
         <image name="enem1" width="574" height="487"/>

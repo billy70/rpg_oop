@@ -35,6 +35,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func attackTapped(sender: AnyObject) {
+    }
+    
     @IBAction func onChestTapped(sender: AnyObject) {
     }
     
