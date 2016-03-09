@@ -28,6 +28,9 @@
                                     <constraint firstAttribute="width" constant="80" id="smr-4K-u2S"/>
                                 </constraints>
                                 <state key="normal" image="chest"/>
+                                <connections>
+                                    <action selector="onChestTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F1w-Gq-cdG"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="Qdr-Og-14L">
                                 <rect key="frame" x="-383" y="518" width="1366" height="82"/>
@@ -118,6 +121,13 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="chestBtn" destination="BX5-Tg-uiN" id="k0d-0c-MfR"/>
+                        <outlet property="enemyHpLbl" destination="B8p-qo-OYZ" id="t26-Ds-uUM"/>
+                        <outlet property="enemyImg" destination="lr4-3y-O7U" id="cxO-qK-Y8q"/>
+                        <outlet property="playerHpLbl" destination="6Zh-Tv-rkc" id="CYB-vY-Klk"/>
+                        <outlet property="printLbl" destination="qna-OM-h4a" id="voh-8i-UVE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
