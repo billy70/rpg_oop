@@ -20,11 +20,20 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="sxh-30-ceJ">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="Qdr-Og-14L">
+                                <rect key="frame" x="-383" y="518" width="1366" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="82" id="ZPl-yf-l8y"/>
+                                    <constraint firstAttribute="width" constant="1366" id="oSN-YC-PeO"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Qdr-Og-14L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7yN-Yt-DTC"/>
                             <constraint firstItem="sxh-30-ceJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ADA-Uf-UKu"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sxh-30-ceJ" secondAttribute="bottom" id="ZaD-Mg-WDm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Qdr-Og-14L" secondAttribute="bottom" id="fcX-XR-Ngu"/>
                             <constraint firstAttribute="trailing" secondItem="sxh-30-ceJ" secondAttribute="trailing" id="ySy-Gb-Hsr"/>
                             <constraint firstItem="sxh-30-ceJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zUj-ZU-mtJ"/>
                         </constraints>
@@ -37,5 +46,6 @@
     </scenes>
     <resources>
         <image name="bg" width="768" height="1024"/>
+        <image name="ground" width="2732" height="164"/>
     </resources>
 </document>
