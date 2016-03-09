@@ -15,6 +15,7 @@
 		D315C1CF1C90670A00303C95 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = D315C1CE1C90670A00303C95 /* Character.swift */; };
 		D315C1D11C90687700303C95 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = D315C1D01C90687700303C95 /* Player.swift */; };
 		D315C1D31C906A7200303C95 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D315C1D21C906A7200303C95 /* Enemy.swift */; };
+		D315C1D51C906CBF00303C95 /* Kimara.swift in Sources */ = {isa = PBXBuildFile; fileRef = D315C1D41C906CBE00303C95 /* Kimara.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		D315C1CE1C90670A00303C95 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		D315C1D01C90687700303C95 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		D315C1D21C906A7200303C95 /* Enemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
+		D315C1D41C906CBE00303C95 /* Kimara.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kimara.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				D315C1CE1C90670A00303C95 /* Character.swift */,
 				D315C1D01C90687700303C95 /* Player.swift */,
 				D315C1D21C906A7200303C95 /* Enemy.swift */,
+				D315C1D41C906CBE00303C95 /* Kimara.swift */,
 			);
 			path = rpg_oop;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			files = (
 				D315C1D11C90687700303C95 /* Player.swift in Sources */,
 				D315C1D31C906A7200303C95 /* Enemy.swift in Sources */,
+				D315C1D51C906CBF00303C95 /* Kimara.swift in Sources */,
 				D315C1CF1C90670A00303C95 /* Character.swift in Sources */,
 				D315C1BF1C90664000303C95 /* ViewController.swift in Sources */,
 				D315C1BD1C90664000303C95 /* AppDelegate.swift in Sources */,
