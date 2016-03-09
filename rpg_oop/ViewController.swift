@@ -18,16 +18,21 @@ class ViewController: UIViewController {
     
     var player: Player!
     var enemy: Enemy!
+    var chestMessage: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         player = Player(name: "Billy The Great", hp: 150, attackPwr: 30)
+
+        chestBtn.hidden = true
+        printLbl.text = "Press the attack button to attack!"
         
         generateRandomEnemy()
         
-        playerHpLbl.text = "\(player.hp)"
+        playerHpLbl.text = "\(player.hp) HP"
+        enemyHpLbl.text = "\(enemy.hp) HP"
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,9 +41,32 @@ class ViewController: UIViewController {
     }
 
     @IBAction func attackTapped(sender: AnyObject) {
+        
+        if enemy.attemptAttack(player.attackPwr) {
+            printLbl.text = "Attacked \(enemy.type) for \(player.attackPwr) HP"
+            enemyHpLbl.text = "\(enemy.hp) HP"
+        } else {
+            printLbl.text = "Attack was unsuccessful!"
+        }
+        
+        if let loot = enemy.dropLoot() {
+            player.addItemToInventory(loot)
+            chestMessage = "\(player.name) found \(loot)"
+            chestBtn.hidden = false
+        }
+        
+        if !enemy.isAlive {
+            enemyHpLbl.text = ""
+            printLbl.text = "Killed \(enemy.type)!"
+            enemyImg.hidden = true
+        }
     }
     
     @IBAction func onChestTapped(sender: AnyObject) {
+        chestBtn.hidden = true
+        printLbl.text = chestMessage
+        
+        NSTimer.scheduledTimerWithTimeInterval(2.0, target: self, selector: "generateRandomEnemy", userInfo: nil, repeats: false)
     }
     
     func generateRandomEnemy() {
@@ -49,6 +77,8 @@ class ViewController: UIViewController {
         } else {
             enemy = DevilWizard(startingHp: 60, attackPwr: 15)
         }
+        
+        enemyImg.hidden = false
     }
 
 }
