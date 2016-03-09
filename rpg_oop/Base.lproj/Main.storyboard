@@ -48,14 +48,26 @@
                                     <constraint firstAttribute="width" constant="194" id="Y0f-tW-gGP"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player attacked wild Kimara!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qna-OM-h4a">
+                                <rect key="frame" x="108" y="57.5" width="385" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="385" id="Oz2-Gx-2pZ"/>
+                                    <constraint firstAttribute="height" constant="20" id="asF-sp-F8L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.99607843137254903" green="0.76470588235294112" blue="0.035294117647058823" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Qdr-Og-14L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7yN-Yt-DTC"/>
                             <constraint firstItem="sxh-30-ceJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ADA-Uf-UKu"/>
+                            <constraint firstItem="qna-OM-h4a" firstAttribute="centerX" secondItem="nBh-OZ-3ZO" secondAttribute="centerX" id="EIc-ZU-z6x"/>
                             <constraint firstItem="nBh-OZ-3ZO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="14" id="LZW-BC-5t7"/>
                             <constraint firstAttribute="trailing" secondItem="lr4-3y-O7U" secondAttribute="trailing" constant="31" id="XAg-ao-oNn"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uIW-Z3-XWB" secondAttribute="bottom" constant="82" id="XRz-is-yud"/>
+                            <constraint firstItem="qna-OM-h4a" firstAttribute="centerY" secondItem="nBh-OZ-3ZO" secondAttribute="centerY" id="YBu-L0-17n"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sxh-30-ceJ" secondAttribute="bottom" id="ZaD-Mg-WDm"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Qdr-Og-14L" secondAttribute="bottom" id="fcX-XR-Ngu"/>
                             <constraint firstItem="uIW-Z3-XWB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="14" id="rv1-N8-r2h"/>
